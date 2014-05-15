@@ -22,6 +22,16 @@ head(pilih)
 summary(tolak)
 summary(pilih)
 
+library(plyr)
+
+sum(tolak$tweet)
+sum(tolak$retweet)
+sum(tolak$tweet,tolak$retweet)
+sum(pilih$tweet)
+sum(pilih$retweet)
+sum(pilih)
+
+sum(tolak,pilih)
 
 boxplot(tolak,main="Tweets & Retweets Distribution 
 #TolakPartaiPoligami hashtag", ylab="Number of Tweets or Retweets each day")
