@@ -15,3 +15,16 @@ pilih <- read.csv("pilih_tw_rt.csv")
 
 names(tolak) <-c("tweet","retweet")
 names(pilih) <-c("tweet","retweet")
+
+head(tolak)
+head(pilih)
+
+summary(tolak)
+summary(pilih)
+
+
+boxplot(tolak,main="Tweets & Retweets Distribution 
+#TolakPartaiPoligami hashtag", ylab="Number of Tweets or Retweets each day")
+
+boxplot(pilih,main="Tweets & Retweets Distribution 
+#SayaPilihPKS hashtag", ylab="Number of Tweets or Retweets each day")
