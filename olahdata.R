@@ -1,3 +1,9 @@
+#author		: Rischan Mafrur
+#email		: rischanlab@gmail.com
+#website	: rischanlab.github.io, ourmasjid.me 
+#May 15, 2014
+
+
 #Data Manipulation
 
 getwd()

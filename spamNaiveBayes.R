@@ -1,3 +1,8 @@
+#author		: Rischan Mafrur
+#email		: rischanlab@gmail.com
+#website	: rischanlab.github.io, ourmasjid.me 
+#May 15, 2014
+
 install.packages('ElemStatLearn')
 library('ElemStatLearn')
 library("klaR")
