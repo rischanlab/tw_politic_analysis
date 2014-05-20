@@ -13,10 +13,14 @@ library("klaR")
 library("caret")
 
 
-#data initiation
+#set the working directory
 getwd()
 setwd("E:\\RESEARCH\\twitter\\data\\csv")
+
+#listing file like 'ls'
 list.files()
+
+#data initiation
 data_train <- read.csv("dataset_train.csv")
 test_tolakpartai <- read.csv("testing_TolakPartai.csv")
 test_sayapilih <- read.csv("testing_SayaPilihPKS.csv")
@@ -25,6 +29,7 @@ test_sayapilih <- read.csv("testing_SayaPilihPKS.csv")
 test_sayapilih <- NULL
 test_tolakpartai <- NULL
 
+#Because the dataset doesent have title/caption so I give the title/names for each columns
 names(data_train) <-c("followers","followings","num_tweets",
                 "tweet_rate","age","hashtag_ratio",
                 "mention_ratio","reputation","API_ratio",
@@ -90,6 +95,7 @@ nrow(x1)
 plot(x1$account)
 library(plotrix)
 
+#Ploting the data to Pie Chart
 slices <- c(6621,3030) 
 lbls <- c("campaign accounts", "real account")
 pct <- round(slices/sum(slices)*100)
