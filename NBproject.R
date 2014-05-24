@@ -83,6 +83,10 @@ result_tolak <- predict(model$finalModel,x1)$class
 #adding column to data x1
 x1$account <- result_tolak
 
+#generate confusion matrix for Tolak Partai Poligami hashtag
+y1 = x1$account
+table(predict(model$finalModel,x1)$class,y1)
+
 library(plyr)
 count(x1$account)
 nrow(x1)
